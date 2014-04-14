@@ -1,0 +1,143 @@
+#start_button_div {
+	height: 100px;
+	width: 200px;
+	margin: 0 auto;
+	position: relative;
+	top: 30%;
+}
+.coolbutton {
+	clear:both;
+	-moz-box-shadow:inset 0px 1px 0px 0px #afd68d;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #afd68d;
+	box-shadow:inset 0px 1px 0px 0px #afd68d;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #455c0a), color-stop(1, #89ad2f) );
+	background:-moz-linear-gradient( center top, #455c0a 5%, #89ad2f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#455c0a', endColorstr='#89ad2f');
+	background-color:#455c0a;
+	text-indent:0;
+	border:1px solid #c8dba8;
+	color:#ffffff;
+	font-family:Arial Black;
+	font-size:28px;
+	font-weight:normal;
+	font-style:normal;
+	height:100px;
+	line-height:40px;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #000000;
+	margin: 10px;
+}
+.coolbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #89ad2f), color-stop(1, #455c0a) );
+	background:-moz-linear-gradient( center top, #89ad2f 5%, #455c0a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#89ad2f', endColorstr='#455c0a');
+	background-color:#89ad2f;
+}
+.coolbutton:active {
+	position:relative;
+	top:1px;
+}
+
+#counter {
+	display: none;
+	text-align: center;
+	font-size: 96px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	color: yellow;
+	text-shadow:3px 1px 0px #000000;
+	position: relative;
+	top: 20%;
+}
+#choices {
+	display: none;
+	text-align: center;
+	position: relative;
+	top: 10%;
+}
+#outcome {
+	display: none;
+	text-align: center;
+	font-family: arial, sans-serif;
+	position: relative;
+	top: 8%;
+}
+#outcome h1 {
+	font-size: 40px;
+	font-weight: bold;
+	color: orange;
+	text-shadow:3px 2px 0px #000000;
+}
+#outcome p {
+	font-size: 32px;
+	text-shadow:2px 1px 0px #000000;
+	color: SaddleBrown;
+	font-weight: normal;
+}
+#outcome #versus {
+	color: green;
+	font-size: 32px;
+	font-weight: bold;
+}
+#player_choice {
+	color: blue;
+}
+#opponent_choice {
+	color: red;
+}
+#playerscore {
+	color:yellow;
+	font-weight: bold;
+	text-shadow:2px 1px 0px #000000;
+}
+#opponentscore {
+	color:yellow;
+	font-weight: bold;
+	text-shadow:2px 1px 0px #000000;
+}
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+.stretch {
+    width:100%;
+    height:100%;
+}
+#title {
+	position: relative;
+	top: 20%;
+}
+#title h1 {
+	text-align: center;
+	font-family: impact, sans-serif;
+	font-size: 72px;
+	color: #1F471F;
+	text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 800px) 
+{
+	#start_button_div {
+		top: 45%;
+	}
+
+	#counter {
+		top: 30%;
+	}
+
+	#choices {
+		top: 25%;
+	}
+
+	#outcome {
+		top: 25%;
+	}
+
+}
